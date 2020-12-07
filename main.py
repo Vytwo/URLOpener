@@ -1,7 +1,10 @@
 import webbrowser as wb
+from selenium import webdriver
 import os 
-
+import art
 os.system("cls")
+
+art.tprint("UO#V1")
 
 urlnames = []
 urllst = []
@@ -19,7 +22,8 @@ def readurls():
 
         except:
             pass
-
+    
+    print("")
 
 
 def display():
@@ -71,7 +75,23 @@ def removeurl():
     
     f.close()
     os.system("cls")
-        
+
+def openemptyinc():
+    pass
+#    chrome_options = webdriver.ChromeOptions()
+#    chrome_options.add_argument("--incognito")
+#    driver = webdriver.Chrome(chrome_options=chrome_options)
+#    driver.get("http://google.com")
+
+# Working on it  
+
+def openbylink():
+    link = input("Enter URL: \n")
+    wb.open_new_tab(link)
+
+
+
+
 while True:
     readurls()
     display()
@@ -92,6 +112,14 @@ while True:
 
     if userinput == "rem":
         removeurl()
+
+    if userinput == "inc":
+        openemptyinc()
+        break
+
+    if userinput == "open":
+        openbylink()
+        break
 
     if userinput.isdigit():
 

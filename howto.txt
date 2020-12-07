@@ -1,0 +1,13 @@
+ _   _   ___     _  _   __     __ _
+| | | | / _ \  _| || |_ \ \   / // |
+| | | || | | ||_  ..  _| \ \ / / | |
+| |_| || |_| ||_      _|  \ V /  | |
+ \___/  \___/   |_||_|     \_/   |_|
+
+Commands:
+
+Numbers(1,2,3 ...) | Open the url
+help               | View the commands
+add                | Activates the add function
+rem                | Activates the remove function
+open               | Activates the openbylink function
