@@ -32,6 +32,7 @@ def display():
     for item in urlnames:
         print("[" + str(x+1) + "]"+ item)
         x +=1
+    print("")
 
 def helpuser():
     os.system("cls")
@@ -52,6 +53,9 @@ def addurl():
     new_url = input("Enter the url of the website: ")
 
     new_name.strip()
+    new_name = new_name.split(" ")
+    new_name = "_".join(new_name)
+
     new_url.strip()
 
     f = open("urls.txt", "a")
