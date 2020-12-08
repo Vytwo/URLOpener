@@ -34,6 +34,19 @@ def display():
         x +=1
     print("")
 
+def checkforempty():
+    f = open("urls.txt", "r")
+    lines = f.readlines()
+    f.close()
+
+    f = open("urls.txt", "w+")
+    f.truncate(0)
+    for line in lines:
+        if line.strip() != "":
+            f.writelines(line)
+    
+    f.close()
+
 def helpuser():
     os.system("cls")
     print("Commands: ")
@@ -99,6 +112,7 @@ def openbylink():
 
 while True:
     readurls()
+    checkforempty()
     display()
 
     userinput = input("/<UO#V1>/ ").lower()
