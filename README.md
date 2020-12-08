@@ -4,8 +4,8 @@
 
 Commands:
 
-Numbers(1,2,3 ...) | Open the url \n
-help               | View the commands \n
-add                | Activates the add function \n
-rem                | Activates the remove function \n
-open               | Activates the openbylink function \n
+Numbers(1,2,3 ...) | Open the url \
+help               | View the commands \
+add                | Activates the add function \
+rem                | Activates the remove function \
+open               | Activates the openbylink function \
