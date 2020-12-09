@@ -78,6 +78,7 @@ def addurl():
     os.system("cls")
 
 def removeurl():
+    display()
     removeindex = input("Which one do you want to remove: ")
     removeindex = int(removeindex) - 1
 
